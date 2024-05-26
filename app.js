@@ -27,7 +27,7 @@ app.get('/',(req,res)=>{
     res.send("welcome")
 })
 app.use(cors());
-app.use('/items',itemRoutes);
+app.use(itemRoutes);
 app.use('/users',userRoutes);
 
 
